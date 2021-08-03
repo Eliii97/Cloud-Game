@@ -8,7 +8,7 @@ public class FlyingEnemy : MonoBehaviour
     private Rigidbody2D enemyRb;
     private GameObject player;
     private SpriteRenderer enemySprite;
-    private int eHealth;
+    public int eHealth;
 
     // Start is called before the first frame update
     void Start()
@@ -17,7 +17,6 @@ public class FlyingEnemy : MonoBehaviour
         player = GameObject.Find("dino");
         enemySprite = GetComponent<SpriteRenderer>();
 
-        eHealth = 3;
         UpdateEHealth(0);
     }
 
@@ -38,8 +37,14 @@ public class FlyingEnemy : MonoBehaviour
 
         if (eHealth <= 0)
         {
-            gameObject.SetActive(false);
+            Destroy(gameObject);
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        UpdateEHealth(1);
+        Destroy(collision.gameObject);
     }
 
     public void UpdateEHealth(int eHealthToTake)

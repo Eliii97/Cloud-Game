@@ -6,10 +6,15 @@ using TMPro;
 public class Player : MonoBehaviour
 {
     public float speed;
+    public float bulletSpeed;
     public Rigidbody2D playerRb;
     public float jumpForce;
     public float horizontalInput;
     public GameObject dirt;
+    public bool hasBeenHit = false;
+    public bool invulnerable = false;
+    public float invulnerableCounter = 0;
+    public float invulnerableTime = 2.5f;
     private Game game;
     private Animator dinoAnimator;
     private SpriteRenderer dinoSprite;
@@ -50,15 +55,36 @@ public class Player : MonoBehaviour
         {
             dinoSprite.flipX = true;
         }
-        else
+        else if(playerRb.velocity.x > 0)
         {
             dinoSprite.flipX = false;
         }
 
+        if (hasBeenHit)
+            invulnerable = true;
+
+        if (invulnerable)
+        {
+            invulnerableCounter += Time.deltaTime;
+
+            if(invulnerableCounter >= invulnerableTime)
+            {
+                invulnerable = false;
+                hasBeenHit = false;
+            }
+        }
+
+
+
         if (Input.GetKeyDown(KeyCode.Keypad0))
         {
-            GameObject bullet = Instantiate(dirt, new Vector3(Player.transform.position.x, Player.transform.position.y, 1));
-            //bullet.GetComponent<Rigidbody2D>().velocity = new Vector2()
+            GameObject bullet = Instantiate(dirt, transform);
+
+            if (dinoSprite.flipX == true)
+                bullet.GetComponent<Rigidbody2D>().velocity = new Vector2(-1 * bulletSpeed, 0);
+
+            else
+                bullet.GetComponent<Rigidbody2D>().velocity = new Vector2(1 * bulletSpeed, 0);
         }
 
         //transform.Translate(Vector2.right * speed * horizontalInput);
@@ -69,12 +95,19 @@ public class Player : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionStay2D(Collision2D collision)
     {
         // If collide with enemy, health -= 1;
         if (collision.gameObject.CompareTag("EnemyWeak"))
         {
             game.UpdateHealth(1);
+            
+        }
+
+        if(collision.gameObject.CompareTag("Enemy") && !invulnerable)
+        {
+            game.UpdateHealth(1);
+            hasBeenHit = true;
         }
     }
 
