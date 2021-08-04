@@ -23,6 +23,10 @@ public class RainDrop : MonoBehaviour
         if (collision.gameObject.CompareTag("floor")) {
             Destroy(gameObject);
         }
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            Destroy(gameObject);
+        }
         if (collision.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);

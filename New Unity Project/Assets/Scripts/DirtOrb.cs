@@ -22,5 +22,9 @@ public class DirtOrb : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        if (collision.gameObject.CompareTag("rain"))
+        {
+            Destroy(gameObject);
+        }
     }
 }

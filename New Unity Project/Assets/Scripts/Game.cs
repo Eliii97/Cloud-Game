@@ -24,11 +24,18 @@ public class Game : MonoBehaviour
         {
             loseScreen.gameObject.SetActive(true);
         }
+        if (health < 0)
+        {
+            health = 0;
+        }
     }
 
     public void UpdateHealth(int healthToTake)
     {
-        health -= healthToTake;
-        healthText.text = "Health: " + health;
+        if (health > 0)
+        {
+            health -= healthToTake;
+            healthText.text = "Health: " + health;
+        }
     }
 }
