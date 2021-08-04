@@ -7,7 +7,7 @@ public class Coznix : MonoBehaviour
     public bool isFollowing = false;
     public GameObject Vex;
     private SpriteRenderer enemySprite;
-    public int eHealth = 20;
+    public int eHealth = 30;
     public float vexSpawnCounter = 0;
     public float vexSpawnWaitTime = 8f;
     private Rigidbody2D enemyRb;
@@ -32,15 +32,6 @@ public class Coznix : MonoBehaviour
                 GameObject rainDrop = Instantiate(Vex, transform);
                 vexSpawnCounter = 0;
             }
-        }
-
-        if (enemyRb.velocity.x > 0)
-        {
-            enemySprite.flipX = true;
-        }
-        else
-        {
-            enemySprite.flipX = false;
         }
 
         if (eHealth <= 0)
