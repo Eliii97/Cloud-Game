@@ -8,6 +8,8 @@ TagManager:
   - healthText
   - dirt
   - Enemy
+  - rain
+  - floor
   layers:
   - Default
   - TransparentFX

@@ -14,7 +14,8 @@ public class Player : MonoBehaviour
     public bool hasBeenHit = false;
     public bool invulnerable = false;
     public float invulnerableCounter = 0;
-    public float invulnerableTime = 2.5f;
+    public float invulnerableTime = 1.5f;
+    private Quaternion zero = new Quaternion();
     private Game game;
     private Animator dinoAnimator;
     private SpriteRenderer dinoSprite;
@@ -71,6 +72,7 @@ public class Player : MonoBehaviour
             {
                 invulnerable = false;
                 hasBeenHit = false;
+                invulnerableCounter = 0;
             }
         }
 
@@ -81,10 +83,16 @@ public class Player : MonoBehaviour
             GameObject bullet = Instantiate(dirt, transform);
 
             if (dinoSprite.flipX == true)
+            {
+                bullet.transform.SetPositionAndRotation(new Vector3(bullet.transform.position.x - 1, bullet.transform.position.y, bullet.transform.position.z), zero);
                 bullet.GetComponent<Rigidbody2D>().velocity = new Vector2(-1 * bulletSpeed, 0);
+            }
 
             else
+            {
+                bullet.transform.SetPositionAndRotation(new Vector3(bullet.transform.position.x + 1, bullet.transform.position.y, bullet.transform.position.z), zero);
                 bullet.GetComponent<Rigidbody2D>().velocity = new Vector2(1 * bulletSpeed, 0);
+            }
         }
 
         //transform.Translate(Vector2.right * speed * horizontalInput);
@@ -105,6 +113,11 @@ public class Player : MonoBehaviour
         }
 
         if(collision.gameObject.CompareTag("Enemy") && !invulnerable)
+        {
+            game.UpdateHealth(1);
+            hasBeenHit = true;
+        }
+        if (collision.gameObject.CompareTag("rain") && !invulnerable)
         {
             game.UpdateHealth(1);
             hasBeenHit = true;

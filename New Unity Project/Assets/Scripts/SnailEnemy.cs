@@ -6,6 +6,7 @@ public class SnailEnemy : MonoBehaviour
 {
     public float speed = 0.0133f;
     public int eHealth = 1;
+    public bool isFollowing = false;
     private SpriteRenderer enemySprite;
     private Rigidbody2D enemyRb;
 
@@ -18,7 +19,8 @@ public class SnailEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.right * -1 * speed);
+        if(isFollowing)
+            transform.Translate(Vector3.right * -1 * speed);
 
         if (eHealth <= 0)
         {
@@ -28,9 +30,20 @@ public class SnailEnemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        UpdateEHealth(1);
-        
-        Destroy(collision.gameObject);
+        if (collision.gameObject.name == "dino")
+        { isFollowing = true; }       
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("dirt"))
+        {
+            UpdateEHealth(1);
+            Destroy(collision.gameObject);
+
+            enemyRb.isKinematic = true;
+            enemyRb.isKinematic = false;
+        }
     }
 
     public void UpdateEHealth(int eHealthToTake)
