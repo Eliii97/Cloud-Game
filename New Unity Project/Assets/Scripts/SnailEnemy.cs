@@ -15,6 +15,7 @@ public class SnailEnemy : MonoBehaviour
     void Start()
     {
         player = GameObject.Find("dino");
+        enemyRb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
