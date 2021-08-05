@@ -1,0 +1,583 @@
+fileFormatVersion: 2
+guid: 4779299722d5ca248863a7bad58f7458
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1711937663341140104
+    second: Astroid dude-Left_0
+  - first:
+      213: 2541783719774607020
+    second: Astroid dude-Left_1
+  - first:
+      213: 8805965820849049208
+    second: Astroid dude-Left_2
+  - first:
+      213: 7312881529193318368
+    second: Astroid dude-Left_3
+  - first:
+      213: -6445867479537181870
+    second: Astroid dude-Left_4
+  - first:
+      213: 2791468422011720463
+    second: Astroid dude-Left_5
+  - first:
+      213: -9152397592537513286
+    second: Astroid dude-Left_6
+  - first:
+      213: 2983903140154878622
+    second: Astroid dude-Left_7
+  - first:
+      213: 1475002532461915905
+    second: Astroid dude-Left_8
+  - first:
+      213: -58961433455671812
+    second: Astroid dude-Left_9
+  - first:
+      213: -5674323350790341280
+    second: Astroid dude-Left_10
+  - first:
+      213: 1974461201481738266
+    second: Astroid dude-Left_11
+  - first:
+      213: 5972191113705174977
+    second: Astroid dude-Left_12
+  - first:
+      213: 9054342220301340789
+    second: Astroid dude-Left_13
+  - first:
+      213: 3373230638508159257
+    second: Astroid dude-Left_14
+  - first:
+      213: 7156136861117248328
+    second: Astroid dude-Left_15
+  - first:
+      213: -8626215657665150185
+    second: Astroid dude-Left_16
+  - first:
+      213: 2329871743360812734
+    second: Astroid dude-Left_17
+  - first:
+      213: -1573483512151262164
+    second: Astroid dude-Left_18
+  - first:
+      213: 7700826367793814428
+    second: Astroid dude-Left_19
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Astroid dude-Left_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 266
+        width: 36
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8d51315b55757b4fb30ad30f667cebd
+      internalID: 1711937663341140104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Astroid dude-Left_1
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 266
+        width: 36
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 422fa8ed88bed704bb4429d58434be40
+      internalID: 2541783719774607020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Astroid dude-Left_2
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 266
+        width: 36
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 443fb7cbc6e57204c869d54131329bf0
+      internalID: 8805965820849049208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Astroid dude-Left_3
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 266
+        width: 36
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b632a75683930ca4c9614ec99b2923de
+      internalID: 7312881529193318368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Astroid dude-Left_4
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 201
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93fb05cceb872c840b9870400bf5450c
+      internalID: -6445867479537181870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Astroid dude-Left_5
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 201
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7568d1cae4f22248a6564cfbc24632c
+      internalID: 2791468422011720463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Astroid dude-Left_6
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 200
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45eb8a3a3fa0383409d757e789b34875
+      internalID: -9152397592537513286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Astroid dude-Left_7
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 201
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 279c287df14183d459c83ddc17488766
+      internalID: 2983903140154878622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Astroid dude-Left_8
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 137
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a58ba2bb8083894192d5b0aa0c74c65
+      internalID: 1475002532461915905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Astroid dude-Left_9
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 136
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 320006ae40eee854db263a6d2845e6cc
+      internalID: -58961433455671812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Astroid dude-Left_10
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 136
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca83bc48b308f884187c06dfb054fe0a
+      internalID: -5674323350790341280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Astroid dude-Left_11
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 138
+        width: 36
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0386021659678a349bd1b11e6d255f68
+      internalID: 1974461201481738266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Astroid dude-Left_12
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 72
+        width: 36
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29df28ba532714d4385bc4c7b20b6ec1
+      internalID: 5972191113705174977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Astroid dude-Left_13
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 73
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8acc8d5871a39741a7de82f89c1f6fc
+      internalID: 9054342220301340789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Astroid dude-Left_14
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 71
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b14b11e01c49e044b601eaffbcba226
+      internalID: 3373230638508159257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Astroid dude-Left_15
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 71
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d149e095becee64c8a70ee6fb236b54
+      internalID: 7156136861117248328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Astroid dude-Left_16
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 7
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d4ee61f831dc964e9841c66e77fea9d
+      internalID: -8626215657665150185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Astroid dude-Left_17
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 7
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82fb6f578ccc0224dbd85f61ad67e434
+      internalID: 2329871743360812734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Astroid dude-Left_18
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 7
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d9ce06e619a0514c81aec3782bc14fa
+      internalID: -1573483512151262164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Astroid dude-Left_19
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 7
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d814f4677d70bc9408d7a9258b184f5e
+      internalID: 7700826367793814428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
