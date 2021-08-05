@@ -8,6 +8,7 @@ public class Game : MonoBehaviour
     public int health = 5;
     public TextMeshProUGUI healthText;
     public GameObject loseScreen;
+    private GameObject player;
 
     // Start is called before the first frame update
     void Start()
@@ -15,6 +16,7 @@ public class Game : MonoBehaviour
         health = 5;
         UpdateHealth(0);
         loseScreen.gameObject.SetActive(false);
+        player = GameObject.Find("dino");
     }
 
     // Update is called once per frame

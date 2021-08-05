@@ -19,6 +19,8 @@ public class Player : MonoBehaviour
     private Game game;
     private Animator dinoAnimator;
     private SpriteRenderer dinoSprite;
+    public float dirtCounter = 0;
+    public float noDirtTime = 0.15f;
     
 
     // Start is called before the first frame update
@@ -35,8 +37,9 @@ public class Player : MonoBehaviour
         // Check to see if player is Alive (Health <= 0)
 
         Vector2 velocity = playerRb.velocity;
-
         velocity.x = Input.GetAxisRaw("Horizontal") * speed;
+
+        dirtCounter += Time.deltaTime;
 
         if (Input.GetKeyDown(KeyCode.Space) && playerRb.velocity.y < 0.05 && playerRb.velocity.y > -0.05)
         {
@@ -76,9 +79,14 @@ public class Player : MonoBehaviour
             }
         }
 
+        if (game.health<=0)
+        {
+            Destroy(gameObject);
+        }
 
 
-        if (Input.GetKeyDown(KeyCode.Keypad0))
+
+        if (Input.GetKeyDown(KeyCode.Keypad0) && dirtCounter > noDirtTime)
         {
             GameObject bullet = Instantiate(dirt, transform);
 
@@ -93,6 +101,11 @@ public class Player : MonoBehaviour
                 bullet.transform.SetPositionAndRotation(new Vector3(bullet.transform.position.x + 1, bullet.transform.position.y, bullet.transform.position.z), zero);
                 bullet.GetComponent<Rigidbody2D>().velocity = new Vector2(1 * bulletSpeed, 0);
             }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Keypad0) && dirtCounter > noDirtTime)
+        {
+            dirtCounter = 0;
         }
 
         //transform.Translate(Vector2.right * speed * horizontalInput);
